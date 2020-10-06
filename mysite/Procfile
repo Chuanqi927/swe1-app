@@ -1,0 +1,1 @@
+web: gunicorn cx927-helloworld.wsgi

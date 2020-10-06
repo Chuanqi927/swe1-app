@@ -25,7 +25,7 @@ SECRET_KEY = 'zv((_1jd$710-3iz9ch$$+(rntvi^t1*j59*n$t1ux7wxp6#a%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [cx927-helloworld.herokuapp.com]
 
 
 # Application definition
