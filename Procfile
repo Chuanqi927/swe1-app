@@ -1,1 +1,1 @@
-web: gunicorn cx927-helloworld.wsgi
+web: gunicorn mysite.wsgi
