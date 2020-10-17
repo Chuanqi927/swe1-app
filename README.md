@@ -6,3 +6,5 @@ Main:
 [![Coverage Status](https://coveralls.io/repos/github/Edward0o0/swe1-app/badge.svg?branch=branch_protection)](https://coveralls.io/github/Edward0o0/swe1-app?branch=branch_protection)
 
 Desire to implement website applicaiton with Django and Heroku
+
+I like the background page of my website :)
