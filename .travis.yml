@@ -1,14 +1,19 @@
 language: python
+
 python:
-  - "3.8.0"
+  - 3.7
+
 install:
   - pip install -r requirements.txt
+
+before_script:
+  - python manage.py migrate
+  - python manage.py collectstatic --noinput
+
 script:
-  - python manage.py
-deploy:
-  provider: pages
-  cleanup: true
-  api_token: github_token  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: main
+  - black --check .
+  - flake8 .
+  - coverage run --source=polls manage.py test
+
+after_script:
+  - coveralls
