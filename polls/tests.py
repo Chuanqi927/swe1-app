@@ -46,8 +46,6 @@ def create_question(question_text, days):
     return Question.objects.create(question_text=question_text, pub_date=time)
 
 
-
-
 class QuestionDetailViewTests(TestCase):
     def test_future_question(self):
         """
